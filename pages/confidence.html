@@ -1,86 +1,269 @@
- and reduces anxiety by up to 30%. Once it's on paper, your brain stops looping over it.</p>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confidence Booster | EC3 Prep Hub — BITS WILP AIML</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --lavender-soft:#ede8fb;--lavender-mid:#b4a5e8;--blue-soft:#e8f3fb;
+      --mint-soft:#e4f8f2;--peach-soft:#fdf3ec;--warm-white:#fdfcff;
+      --text-dark:#2d2640;--text-mid:#5a5270;--text-light:#8b82a8;
+      --accent-purple:#7c5cbf;--accent-green:#3aaa82;--accent-orange:#e87d5a;
+      --shadow:0 4px 24px rgba(124,92,191,0.10);--radius:16px;--radius-sm:10px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Nunito',sans-serif;background:var(--warm-white);color:var(--text-dark);line-height:1.7}
+    .navbar{position:sticky;top:0;z-index:999;background:rgba(253,252,255,0.95);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,184,240,0.3);padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:64px;box-shadow:0 2px 16px rgba(124,92,191,0.07)}
+    .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .logo-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--lavender-mid),var(--accent-purple));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:white}
+    .nav-brand span{font-family:'DM Serif Display',serif;font-size:1.15rem;color:var(--accent-purple)}
+    .nav-links{display:flex;align-items:center;gap:.25rem;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--text-mid);font-size:.82rem;font-weight:600;padding:6px 11px;border-radius:8px;transition:.25s}
+    .nav-links a:hover,.nav-links a.active{background:var(--lavender-soft);color:var(--accent-purple)}
+    .nav-toggle{display:none;flex-direction:column;gap:4px;cursor:pointer;background:none;border:none;padding:4px}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--accent-purple);border-radius:2px}
+    .hero{background:linear-gradient(135deg,var(--lavender-soft) 0%,var(--blue-soft) 50%,var(--mint-soft) 100%);padding:4rem 1.5rem 3rem;text-align:center}
+    .hero-badge{display:inline-flex;align-items:center;gap:6px;background:white;border:1px solid var(--lavender-mid);color:var(--accent-purple);font-size:.8rem;font-weight:700;padding:6px 16px;border-radius:50px;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+    .hero h1{font-family:'DM Serif Display',serif;font-size:clamp(1.8rem,5vw,3rem);color:var(--text-dark);line-height:1.2;margin-bottom:1rem}
+    .hero h1 .highlight{color:var(--accent-purple);font-style:italic}
+    .hero .tagline{font-size:1.05rem;color:var(--text-mid);max-width:580px;margin:0 auto 1rem;font-weight:500}
+    .hero .micro-copy{font-size:.9rem;color:var(--accent-green);font-weight:700}
+    .section{padding:3.5rem 1.5rem;max-width:1100px;margin:0 auto}
+    .section-header{text-align:center;margin-bottom:2.5rem}
+    .section-header h2{font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,3vw,2.2rem);color:var(--text-dark);margin-bottom:.5rem}
+    .section-header p{color:var(--text-mid)}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:50px;font-family:'Nunito',sans-serif;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer;border:none;transition:.25s}
+    .btn-secondary{background:white;color:var(--accent-purple);border:2px solid var(--lavender-mid)}
+    .btn-secondary:hover{background:var(--lavender-soft);transform:translateY(-2px)}
+    .breathe-circle{width:160px;height:160px;border-radius:50%;background:linear-gradient(135deg,var(--lavender-mid),var(--accent-purple));margin:1.5rem auto;display:flex;align-items:center;justify-content:center;animation:breathe 4s ease-in-out infinite;box-shadow:0 0 0 20px rgba(180,165,232,.2),0 0 0 40px rgba(180,165,232,.1)}
+    @keyframes breathe{0%,100%{transform:scale(1);box-shadow:0 0 0 20px rgba(180,165,232,.2),0 0 0 40px rgba(180,165,232,.1)}50%{transform:scale(1.12);box-shadow:0 0 0 30px rgba(180,165,232,.25),0 0 0 60px rgba(180,165,232,.12)}}
+    .breathe-circle p{color:white;font-weight:700;font-size:1rem;text-align:center;line-height:1.5;white-space:pre-line}
+    .quote-box{background:white;border-radius:var(--radius);padding:2.5rem 2rem;text-align:center;box-shadow:var(--shadow);border:1px solid rgba(201,184,240,.25);min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:1rem}
+    .quote-box blockquote{font-family:'DM Serif Display',serif;font-size:1.3rem;color:var(--text-dark);font-style:italic;line-height:1.5;margin-bottom:1rem;transition:opacity .3s}
+    .quote-box cite{color:var(--text-light);font-size:.85rem;font-weight:600;transition:opacity .3s}
+    .achieve-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin-bottom:3rem}
+    .achieve-card{background:white;border-radius:var(--radius);padding:1.5rem;border:1px solid rgba(201,184,240,.2);box-shadow:var(--shadow);text-align:center;transition:.25s}
+    .achieve-card:hover{transform:translateY(-4px);box-shadow:0 8px 36px rgba(124,92,191,.18)}
+    .achieve-card .icon{font-size:2.5rem;margin-bottom:.75rem}
+    .achieve-card h4{font-weight:800;color:var(--text-dark);font-size:.95rem;margin-bottom:.4rem}
+    .achieve-card p{font-size:.82rem;color:var(--text-mid)}
+    .reframe-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.25rem}
+    .reframe-card{background:white;border-radius:var(--radius-sm);padding:1.5rem}
+    .rf-from{color:var(--accent-orange);font-weight:700;font-size:.88rem;margin-bottom:.4rem}
+    .rf-to{color:var(--accent-green);font-weight:700;font-size:.88rem;margin-bottom:.4rem}
+    .reframe-card p{font-size:.82rem;color:var(--text-mid);margin-top:.4rem}
+    .affirm-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;margin-bottom:3rem}
+    .affirm-card{background:linear-gradient(135deg,var(--lavender-soft),var(--blue-soft));border-radius:var(--radius);padding:2rem 1.5rem;text-align:center;border:1px solid rgba(201,184,240,.3);transition:.25s}
+    .affirm-card:hover{transform:translateY(-4px)}
+    .affirm-card .em{font-size:2.5rem;margin-bottom:.75rem}
+    .affirm-card p{font-family:'DM Serif Display',serif;font-size:1.05rem;color:var(--text-dark);font-style:italic}
+    .affirm-card small{color:var(--text-light);font-size:.78rem;font-weight:600;margin-top:.4rem;display:block}
+    .tip-card{background:white;border-radius:var(--radius);padding:1.5rem 1.75rem;border:1px solid rgba(201,184,240,.2);box-shadow:var(--shadow);display:flex;gap:1.25rem;align-items:flex-start;margin-bottom:1rem;transition:.25s}
+    .tip-card:hover{transform:translateX(6px)}
+    .tip-icon{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent-purple),var(--lavender-mid));color:white;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+    .tip-content h4{font-weight:800;color:var(--text-dark);margin-bottom:.4rem}
+    .tip-content p{font-size:.88rem;color:var(--text-mid)}
+    .moti-banner{background:linear-gradient(135deg,var(--accent-purple),#5a3fa0);color:white;text-align:center;padding:3rem 1.5rem}
+    .moti-banner h2{font-family:'DM Serif Display',serif;font-size:clamp(1.4rem,3.5vw,2.2rem);margin-bottom:.75rem}
+    .moti-banner p{opacity:.88;font-size:1rem}
+    footer{background:var(--text-dark);color:rgba(255,255,255,.75);padding:3rem 1.5rem 2rem;margin-top:0}
+    .footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-bottom:2rem}
+    footer h4{color:white;font-weight:700;margin-bottom:.75rem}
+    footer p{font-size:.875rem;opacity:.75;line-height:1.7}
+    footer ul{list-style:none;display:flex;flex-direction:column;gap:.4rem}
+    footer ul a{color:rgba(255,255,255,.65);text-decoration:none;font-size:.875rem;transition:.25s}
+    footer ul a:hover{color:var(--lavender-mid)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;font-size:.8rem;text-align:center;opacity:.55;max-width:1100px;margin:0 auto}
+    .toast{position:fixed;bottom:24px;right:24px;background:var(--text-dark);color:white;padding:12px 20px;border-radius:var(--radius-sm);font-size:.9rem;font-weight:600;box-shadow:0 8px 32px rgba(0,0,0,.25);transform:translateY(100px);opacity:0;transition:.28s;z-index:9999}
+    .toast.show{transform:translateY(0);opacity:1}
+    @media(max-width:768px){
+      .nav-links{display:none;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:white;padding:1rem;border-bottom:1px solid rgba(201,184,240,.3);box-shadow:0 8px 24px rgba(124,92,191,.1)}
+      .nav-links.open{display:flex}
+      .nav-toggle{display:flex}
+      .section{padding:2.5rem 1rem}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="../index.html" class="nav-brand">
+    <div class="logo-icon">🎓</div>
+    <span>EC3 Prep Hub</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="syllabus.html">Syllabus</a></li>
+    <li><a href="notes.html">Notes</a></li>
+    <li><a href="pyq.html">PYQs</a></li>
+    <li><a href="mocktest.html">Mock Tests</a></li>
+    <li><a href="tips.html">Exam Tips</a></li>
+    <li><a href="revision.html">Quick Revision</a></li>
+    <li><a href="confidence.html" class="active">Confidence Booster</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">💜 You Are Stronger Than You Think</div>
+  <h1>This Page Is Just<br><span class="highlight">For You</span></h1>
+  <p class="tagline">Feeling anxious or overwhelmed? Take a moment. You deserve to feel supported, not just tested.</p>
+  <p class="micro-copy">💙 Exam stress is real. Your feelings are valid. You are more capable than your anxiety says.</p>
+</section>
+
+<div class="section">
+
+  <!-- BREATHING -->
+  <div style="text-align:center;margin-bottom:3rem">
+    <h2 style="font-family:'DM Serif Display',serif;color:var(--text-dark);margin-bottom:.5rem">Take a Breath First 🌿</h2>
+    <p style="color:var(--text-mid);margin-bottom:.5rem">Follow the circle — 4s inhale, 4s hold, 4s exhale. Do this 3 times.</p>
+    <div class="breathe-circle"><p id="breatheText">Breathe&#10;In...</p></div>
+    <p style="color:var(--text-light);font-size:.85rem">This resets your nervous system in under 2 minutes.</p>
+  </div>
+
+  <!-- QUOTES -->
+  <div style="max-width:680px;margin:0 auto 3rem">
+    <h2 style="font-family:'DM Serif Display',serif;color:var(--text-dark);margin-bottom:1rem;text-align:center">A Thought to Hold On To ✨</h2>
+    <div class="quote-box">
+      <blockquote id="qText">"Every expert was once a beginner who refused to give up."</blockquote>
+      <cite id="qAuth">— Community Wisdom</cite>
     </div>
-    <div class="tip-card">
-      <div class="tip-num">🚶</div>
-      <div class="tip-content">
-        <h4>10-Minute Walk (Seriously, Do This)</h4>
-        <p>When your brain feels completely fried, 10 minutes of walking outdoors resets cortisol levels and improves memory consolidation. You'll come back to the material with measurably better focus.</p>
-      </div>
-    </div>
-    <div class="tip-card">
-      <div class="tip-num">😴</div>
-      <div class="tip-content">
-        <h4>Sleep Is Not Optional — It's Revision</h4>
-        <p>Your brain consolidates everything you've learned during sleep. Cutting sleep to study more is counter-productive. 7–8 hours = your brain moves today's learning from temporary to permanent memory.</p>
-      </div>
+    <div style="text-align:center"><button class="btn btn-secondary" onclick="nextQuote()">Next Quote ✨</button></div>
+  </div>
+
+  <!-- ACHIEVEMENTS -->
+  <div class="section-header">
+    <h2>Look at What You've Already Done</h2>
+    <p>When doubt creeps in, come back to these real facts about yourself.</p>
+  </div>
+  <div class="achieve-grid">
+    <div class="achieve-card"><div class="icon">🎓</div><h4>You Got Into M.Tech at BITS</h4><p>One of India's most prestigious institutions. That wasn't luck — that was your capability, proven.</p></div>
+    <div class="achieve-card"><div class="icon">⚖️</div><h4>Doing This While Working Full-Time</h4><p>Studying for an M.Tech alongside a full-time job is genuinely remarkable. Most people never attempt it.</p></div>
+    <div class="achieve-card"><div class="icon">📚</div><h4>You're Actively Preparing</h4><p>You're here, reading notes, taking mock tests. That already puts you ahead of anyone who gave up.</p></div>
+    <div class="achieve-card"><div class="icon">🔁</div><h4>You've Handled Hard Things Before</h4><p>Every challenge in your career brought you to this moment. You have more resilience than you realise.</p></div>
+    <div class="achieve-card"><div class="icon">🌱</div><h4>You Are Growing Right Now</h4><p>Even the struggle with MFML is growth. Neural pathways are forming as you study today.</p></div>
+    <div class="achieve-card"><div class="icon">💡</div><h4>You Chose the Hard Path Willingly</h4><p>Nobody forced you. You chose challenge over comfort. That is courage, plain and simple.</p></div>
+  </div>
+
+  <!-- REFRAMING -->
+  <div style="background:linear-gradient(135deg,var(--lavender-soft),var(--peach-soft));border-radius:var(--radius);padding:2.5rem 2rem;margin-bottom:3rem">
+    <h2 style="font-family:'DM Serif Display',serif;color:var(--text-dark);margin-bottom:1.5rem;text-align:center">Reframing the Anxiety</h2>
+    <div class="reframe-grid">
+      <div class="reframe-card"><div class="rf-from">❌ "I'll fail."</div><div class="rf-to">✅ "I'm learning what I need to pass, right now."</div><p>Fear is future-focused. Studying is present-focused. Stay present.</p></div>
+      <div class="reframe-card"><div class="rf-from">❌ "I don't understand anything."</div><div class="rf-to">✅ "I understand more than I did last week."</div><p>Compare yourself to you one week ago — not to a perfect imaginary standard.</p></div>
+      <div class="reframe-card"><div class="rf-from">❌ "Others are smarter than me."</div><div class="rf-to">✅ "Everyone is struggling. We're all figuring it out."</div><p>That confident-looking person online? They're anxious too. MFML is hard for everyone.</p></div>
+      <div class="reframe-card"><div class="rf-from">❌ "Only X days left and I'm not ready."</div><div class="rf-to">✅ "Every hour from now makes me more ready."</div><p>Replace countdown panic with: "What is the one best thing I can study in the next hour?"</p></div>
     </div>
   </div>
+
+  <!-- AFFIRMATIONS -->
+  <div class="section-header">
+    <h2>Daily Affirmations for Exam Week</h2>
+    <p>Say these out loud. Verbalising positive statements reduces cortisol. They genuinely work.</p>
+  </div>
+  <div class="affirm-grid">
+    <div class="affirm-card"><div class="em">🌟</div><p>"I am more prepared than I feel."</p><small>Anxiety lies. Your preparation is real.</small></div>
+    <div class="affirm-card"><div class="em">💪</div><p>"I have handled difficult things before."</p><small>Your track record is evidence.</small></div>
+    <div class="affirm-card"><div class="em">🧠</div><p>"My brain is capable of understanding this."</p><small>Neuroplasticity is real. You can learn anything.</small></div>
+    <div class="affirm-card"><div class="em">📈</div><p>"Every session makes me stronger."</p><small>Compound learning is real. Trust the process.</small></div>
+    <div class="affirm-card"><div class="em">🌱</div><p>"I don't need to be perfect. I need to pass."</p><small>The exam sets a threshold, not a perfection standard.</small></div>
+    <div class="affirm-card"><div class="em">💙</div><p>"I deserve to succeed, and I'm working for it."</p><small>Effort + self-belief = results.</small></div>
+  </div>
+
+  <!-- PRACTICAL TIPS -->
+  <div class="section-header">
+    <h2>When Anxiety Blocks You — Practical Fixes</h2>
+  </div>
+  <div class="tip-card"><div class="tip-icon">🧘</div><div class="tip-content"><h4>5-4-3-2-1 Grounding</h4><p>Name 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste. Instantly interrupts the anxiety spiral and brings you back to the present moment.</p></div></div>
+  <div class="tip-card"><div class="tip-icon">✍️</div><div class="tip-content"><h4>Write Down What's Worrying You</h4><p>5 minutes writing your fears reduces anxiety by up to 30%. Once it's on paper, your brain stops looping over it. Then close the paper and open your notes.</p></div></div>
+  <div class="tip-card"><div class="tip-icon">⏱️</div><div class="tip-content"><h4>25-Minute Pomodoro Focus Block</h4><p>Set a timer for 25 minutes, study one topic only, then take a 5-minute break. Scientifically proven to maximise focus and reduce overwhelm. Small chunks beat marathon sessions.</p></div></div>
+  <div class="tip-card"><div class="tip-icon">🚶</div><div class="tip-content"><h4>10-Minute Walk (Seriously, Do This)</h4><p>When your brain feels fried, 10 minutes walking outdoors resets cortisol and improves memory consolidation. You will return with measurably better focus.</p></div></div>
+  <div class="tip-card"><div class="tip-icon">😴</div><div class="tip-content"><h4>Sleep Is Revision — Not a Luxury</h4><p>Your brain consolidates everything you learned during sleep. Cutting sleep to study more is counter-productive. 7–8 hours moves today's learning from temporary to permanent memory.</p></div></div>
 
 </div>
 
 <div class="moti-banner">
   <h2>You are not defined by one exam.<br>But you are capable of doing well in it.</h2>
-  <p>Whatever happens, you have shown remarkable dedication by pursuing this degree. That character will serve you your whole life. Now go do your best — it's genuinely enough. 💜</p>
+  <p>You have shown remarkable dedication pursuing this degree while working full-time.<br>That character serves you your whole life. Now go do your best — it is genuinely enough. 💜</p>
 </div>
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-brand"><h4>🎓 EC3 Prep Hub</h4><p>Free, community-built prep for BITS WILP AIML. Not affiliated with BITS Pilani.</p></div>
+    <div><h4>🎓 EC3 Prep Hub</h4><p>Free, community-built prep for BITS WILP AIML. Not affiliated with BITS Pilani.</p></div>
     <div><h4>Quick Links</h4><ul>
       <li><a href="../index.html">Home</a></li>
       <li><a href="mocktest.html">Mock Tests</a></li>
       <li><a href="revision.html">Quick Revision</a></li>
       <li><a href="tips.html">Exam Tips</a></li>
+      <li><a href="notes.html">Unit Notes</a></li>
     </ul></div>
   </div>
-  <div class="footer-bottom"><p>Disclaimer: Independent student resource. Not affiliated with BITS Pilani. Built with 💜 for the WILP community.</p></div>
+  <div class="footer-bottom"><p>Disclaimer: Independent student resource. Not affiliated with BITS Pilani. Built with 💜 for the WILP community · 2025–2026</p></div>
 </footer>
 
-<script src="../js/main.js"></script>
-<script>
-// Breathing exercise
-const breatheEl = document.getElementById('breatheText');
-const phases = [
-  { text: 'Breathe\nIn...', duration: 4000 },
-  { text: 'Hold...', duration: 4000 },
-  { text: 'Breathe\nOut...', duration: 4000 }
-];
-let phase = 0;
-setInterval(() => {
-  phase = (phase + 1) % phases.length;
-  breatheEl.textContent = phases[phase].text;
-}, 4000);
+<div class="toast" id="toast"></div>
 
-// Quotes
-const quotes = [
-  { text: "Every expert was once a beginner who refused to give up.", author: "Community Wisdom" },
-  { text: "You don't have to be great to start, but you have to start to be great.", author: "Zig Ziglar" },
-  { text: "Confidence comes from doing. Do one more practice problem.", author: "BITS WILP Senior" },
-  { text: "The pain of discipline is less than the pain of regret.", author: "Jim Rohn" },
-  { text: "You are braver than you believe, stronger than you seem, and smarter than you think.", author: "A.A. Milne" },
-  { text: "Small daily improvements over time lead to stunning results.", author: "Robin Sharma" },
-  { text: "It always seems impossible until it's done.", author: "Nelson Mandela" },
-  { text: "Your education is a dress rehearsal for a life that is yours to lead.", author: "Nora Ephron" },
-  { text: "The beautiful thing about learning is that nobody can take it away from you.", author: "B.B. King" },
-  { text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" }
-];
-let qi = 0;
-function nextQuote() {
-  qi = (qi + 1) % quotes.length;
-  const box = document.getElementById('quoteText');
-  const auth = document.getElementById('quoteAuthor');
-  box.style.opacity = '0';
-  auth.style.opacity = '0';
-  setTimeout(() => {
-    box.textContent = '"' + quotes[qi].text + '"';
-    auth.textContent = '— ' + quotes[qi].author;
-    box.style.opacity = '1';
-    auth.style.opacity = '1';
-  }, 300);
-}
-document.getElementById('quoteText').style.transition = 'opacity 0.3s ease';
-document.getElementById('quoteAuthor').style.transition = 'opacity 0.3s ease';
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // NAV TOGGLE
+  const navToggle = document.getElementById('navToggle');
+  const navLinks  = document.getElementById('navLinks');
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  }
+
+  // BREATHING EXERCISE
+  const breatheEl = document.getElementById('breatheText');
+  if (breatheEl) {
+    const phases = ['Breathe\nIn...', 'Hold...', 'Breathe\nOut...'];
+    let ph = 0;
+    setInterval(() => {
+      ph = (ph + 1) % 3;
+      breatheEl.textContent = phases[ph];
+    }, 4000);
+  }
+
+  // ROTATING QUOTES
+  const qT = document.getElementById('qText');
+  const qA = document.getElementById('qAuth');
+  const quotes = [
+    { t: "Every expert was once a beginner who refused to give up.", a: "Community Wisdom" },
+    { t: "You don't have to be great to start, but you have to start to be great.", a: "Zig Ziglar" },
+    { t: "Confidence comes from doing. Do one more practice problem.", a: "BITS WILP Senior" },
+    { t: "The pain of discipline is less than the pain of regret.", a: "Jim Rohn" },
+    { t: "You are braver than you believe, stronger than you seem, and smarter than you think.", a: "A.A. Milne" },
+    { t: "Small daily improvements over time lead to stunning results.", a: "Robin Sharma" },
+    { t: "It always seems impossible until it is done.", a: "Nelson Mandela" },
+    { t: "The beautiful thing about learning is that nobody can take it away from you.", a: "B.B. King" },
+    { t: "Believe you can and you're halfway there.", a: "Theodore Roosevelt" },
+    { t: "Your only limit is the one you set yourself.", a: "Unknown" }
+  ];
+  let qi = 0;
+
+  if (qT && qA) {
+    qT.style.transition = 'opacity .3s';
+    qA.style.transition = 'opacity .3s';
+  }
+
+  window.nextQuote = function() {
+    if (!qT || !qA) return;
+    qi = (qi + 1) % quotes.length;
+    qT.style.opacity = '0';
+    qA.style.opacity = '0';
+    setTimeout(() => {
+      qT.textContent = '\u201C' + quotes[qi].t + '\u201D';
+      qA.textContent = '\u2014 ' + quotes[qi].a;
+      qT.style.opacity = '1';
+      qA.style.opacity = '1';
+    }, 300);
+  };
+
+}); // end DOMContentLoaded
 </script>
 </body>
 </html>
