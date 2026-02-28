@@ -1,0 +1,86 @@
+ and reduces anxiety by up to 30%. Once it's on paper, your brain stops looping over it.</p>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">🚶</div>
+      <div class="tip-content">
+        <h4>10-Minute Walk (Seriously, Do This)</h4>
+        <p>When your brain feels completely fried, 10 minutes of walking outdoors resets cortisol levels and improves memory consolidation. You'll come back to the material with measurably better focus.</p>
+      </div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-num">😴</div>
+      <div class="tip-content">
+        <h4>Sleep Is Not Optional — It's Revision</h4>
+        <p>Your brain consolidates everything you've learned during sleep. Cutting sleep to study more is counter-productive. 7–8 hours = your brain moves today's learning from temporary to permanent memory.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="moti-banner">
+  <h2>You are not defined by one exam.<br>But you are capable of doing well in it.</h2>
+  <p>Whatever happens, you have shown remarkable dedication by pursuing this degree. That character will serve you your whole life. Now go do your best — it's genuinely enough. 💜</p>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><h4>🎓 EC3 Prep Hub</h4><p>Free, community-built prep for BITS WILP AIML. Not affiliated with BITS Pilani.</p></div>
+    <div><h4>Quick Links</h4><ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="mocktest.html">Mock Tests</a></li>
+      <li><a href="revision.html">Quick Revision</a></li>
+      <li><a href="tips.html">Exam Tips</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom"><p>Disclaimer: Independent student resource. Not affiliated with BITS Pilani. Built with 💜 for the WILP community.</p></div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+// Breathing exercise
+const breatheEl = document.getElementById('breatheText');
+const phases = [
+  { text: 'Breathe\nIn...', duration: 4000 },
+  { text: 'Hold...', duration: 4000 },
+  { text: 'Breathe\nOut...', duration: 4000 }
+];
+let phase = 0;
+setInterval(() => {
+  phase = (phase + 1) % phases.length;
+  breatheEl.textContent = phases[phase].text;
+}, 4000);
+
+// Quotes
+const quotes = [
+  { text: "Every expert was once a beginner who refused to give up.", author: "Community Wisdom" },
+  { text: "You don't have to be great to start, but you have to start to be great.", author: "Zig Ziglar" },
+  { text: "Confidence comes from doing. Do one more practice problem.", author: "BITS WILP Senior" },
+  { text: "The pain of discipline is less than the pain of regret.", author: "Jim Rohn" },
+  { text: "You are braver than you believe, stronger than you seem, and smarter than you think.", author: "A.A. Milne" },
+  { text: "Small daily improvements over time lead to stunning results.", author: "Robin Sharma" },
+  { text: "It always seems impossible until it's done.", author: "Nelson Mandela" },
+  { text: "Your education is a dress rehearsal for a life that is yours to lead.", author: "Nora Ephron" },
+  { text: "The beautiful thing about learning is that nobody can take it away from you.", author: "B.B. King" },
+  { text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" }
+];
+let qi = 0;
+function nextQuote() {
+  qi = (qi + 1) % quotes.length;
+  const box = document.getElementById('quoteText');
+  const auth = document.getElementById('quoteAuthor');
+  box.style.opacity = '0';
+  auth.style.opacity = '0';
+  setTimeout(() => {
+    box.textContent = '"' + quotes[qi].text + '"';
+    auth.textContent = '— ' + quotes[qi].author;
+    box.style.opacity = '1';
+    auth.style.opacity = '1';
+  }, 300);
+}
+document.getElementById('quoteText').style.transition = 'opacity 0.3s ease';
+document.getElementById('quoteAuthor').style.transition = 'opacity 0.3s ease';
+</script>
+</body>
+</html>

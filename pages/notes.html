@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit Notes | EC3 Prep Hub — BITS WILP AIML</title>
+  <meta name="description" content="Concise unit-wise study notes for MFML, ISM, ML and DNN — BITS WILP MTech AIML EC3 preparation." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<nav class="navbar">
+  <a href="../index.html" class="nav-brand"><div class="logo-icon">🎓</div><span>EC3 Prep Hub</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="syllabus.html">Syllabus</a></li>
+    <li><a href="notes.html" class="active">Notes</a></li>
+    <li><a href="pyq.html">PYQs</a></li>
+    <li><a href="mocktest.html">Mock Tests</a></li>
+    <li><a href="tips.html">Exam Tips</a></li>
+    <li><a href="revision.html">Quick Revision</a></li>
+    <li><a href="confidence.html">Confidence Booster</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="hero" style="padding:3rem 1.5rem 2rem">
+  <div class="hero-badge">📚 Unit-Wise Study Notes</div>
+  <h1>Clear Notes for<br><span class="highlight">Every Key Concept</span></h1>
+  <p class="tagline">Original, concise summaries of every exam-relevant topic. Use these alongside your textbooks.</p>
+  <p class="micro-copy">📖 These notes supplement — don't replace — your textbooks. Always go deeper on topics that appear in PYQs.</p>
+</section>
+
+<div class="section">
+  <!-- Subject Tabs -->
+  <div class="subject-tabs">
+    <button class="tab-btn active" data-tab="tab-mfml">∑ MFML</button>
+    <button class="tab-btn" data-tab="tab-ism">📊 ISM</button>
+    <button class="tab-btn" data-tab="tab-ml">🤖 ML</button>
+    <button class="tab-btn" data-tab="tab-dnn">🧠 DNN</button>
+  </div>
+
+  <!-- MFML NOTES -->
+  <div id="tab-mfml" class="tab-content active" id="mfml">
+    <div style="margin-bottom:1.5rem;padding:1.25rem;background:var(--lavender-soft);border-radius:var(--radius-sm)">
+      <strong style="color:var(--accent-purple)">💡 MFML Strategy:</strong>
+      <span style="color:var(--text-mid);font-size:0.9rem"> Start from Week 1. Linear algebra is foundational for all other subjects. Don't skip proofs — understanding why is what the exam tests.</span>
+    </div>
+    <div class="accordion">
+
+      <div class="accordion-item">
+        <button class="accordion-header">Unit 1: Linear Algebra Fundamentals <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Vectors:</strong> An ordered list of numbers. A vector v ∈ ℝⁿ has n components. Key operations: addition, scalar multiplication, dot product.</p>
+          <p style="margin-top:1rem"><strong>Dot Product:</strong> u·v = Σᵢ uᵢvᵢ = |u||v|cos(θ). Used to measure similarity/angle between vectors.</p>
+          <p style="margin-top:1rem"><strong>Linear Independence:</strong> Vectors v₁,...,vₙ are linearly independent if no vector can be written as a linear combination of the others. Equivalently, c₁v₁ + ... + cₙvₙ = 0 implies all cᵢ = 0.</p>
+          <p style="margin-top:1rem"><strong>Span:</strong> The set of all linear combinations of a set of vectors. Forms a vector subspace.</p>
+          <p style="margin-top:1rem"><strong>Basis:</strong> A set of linearly independent vectors that spans the space. The number of basis vectors = dimension of the space.</p>
+          <p style="margin-top:1rem"><strong>Rank:</strong> The maximum number of linearly independent columns (= rows) of a matrix. rank(A) ≤ min(m, n) for A ∈ ℝᵐˣⁿ.</p>
+          <p style="margin-top:1rem"><strong>Null Space:</strong> {x : Ax = 0}. Rank-Nullity theorem: rank(A) + nullity(A) = n (number of columns).</p>
+          <p style="margin-top:1rem"><strong>Key Formulas:</strong></p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>det(AB) = det(A)·det(B)</li>
+            <li>(AB)⁻¹ = B⁻¹A⁻¹</li>
+            <li>(AB)ᵀ = BᵀAᵀ</li>
+            <li>tr(AB) = tr(BA)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Unit 2: Inner Products &amp; Orthogonality <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Inner Product:</strong> A generalization of dot product satisfying symmetry, linearity, and positive definiteness: ⟨x,x⟩ ≥ 0 with equality iff x=0.</p>
+          <p style="margin-top:1rem"><strong>Norm:</strong> ||x|| = √⟨x,x⟩. L1 norm: Σ|xᵢ|. L2 norm: √(Σxᵢ²). L∞ norm: max|xᵢ|.</p>
+          <p style="margin-top:1rem"><strong>Orthogonality:</strong> u⊥v iff ⟨u,v⟩ = 0. Orthogonal vectors are "perpendicular" in the inner product space.</p>
+          <p style="margin-top:1rem"><strong>Orthogonal Projection:</strong> The projection of x onto subspace U spanned by {b₁,...,bₖ}: π(x) = Σᵢ [⟨x,bᵢ⟩/⟨bᵢ,bᵢ⟩]bᵢ. If B is orthonormal: π(x) = BBᵀx.</p>
+          <p style="margin-top:1rem"><strong>Gram-Schmidt:</strong> Process to orthogonalize a set of vectors. Starting with v₁,...,vₙ: e₁ = v₁/||v₁||, then subtract projections iteratively. Used for QR decomposition.</p>
+          <p style="margin-top:1rem"><strong>Cauchy-Schwarz Inequality:</strong> |⟨u,v⟩| ≤ ||u||·||v||. Equality holds iff u and v are collinear.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Unit 3: Eigenvalues, Eigenvectors &amp; SVD <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Eigenvalue Equation:</strong> Av = λv. Non-trivial solutions exist when det(A - λI) = 0 (characteristic equation).</p>
+          <p style="margin-top:1rem"><strong>Properties:</strong></p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>tr(A) = Σ eigenvalues</li>
+            <li>det(A) = Π eigenvalues</li>
+            <li>Symmetric matrices: all eigenvalues real</li>
+            <li>Positive definite: all eigenvalues &gt; 0</li>
+          </ul>
+          <p style="margin-top:1rem"><strong>Diagonalization:</strong> A = PDP⁻¹ where P has eigenvectors as columns and D is diagonal with eigenvalues. Requires n linearly independent eigenvectors.</p>
+          <p style="margin-top:1rem"><strong>Spectral Theorem:</strong> Any real symmetric matrix A can be written as A = QΛQᵀ where Q is orthogonal and Λ is diagonal. (Q has orthonormal eigenvectors.)</p>
+          <p style="margin-top:1rem"><strong>SVD:</strong> For any A ∈ ℝᵐˣⁿ: A = UΣVᵀ</p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>U ∈ ℝᵐˣᵐ: left singular vectors (eigenvectors of AAᵀ)</li>
+            <li>V ∈ ℝⁿˣⁿ: right singular vectors (eigenvectors of AᵀA)</li>
+            <li>Σ: diagonal matrix of singular values σᵢ = √(eigenvalue of AᵀA) ≥ 0</li>
+          </ul>
+          <p style="margin-top:1rem"><strong>SVD Applications:</strong> PCA (take top-k singular vectors), low-rank approximation, least squares, image compression.</p>
+          <p style="margin-top:1rem"><strong>Low-rank Approximation:</strong> Best rank-k approximation: Aₖ = Σᵢ₌₁ᵏ σᵢuᵢvᵢᵀ (Eckart-Young theorem).</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Unit 4: Gradient, Jacobian &amp; Hessian <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Partial Derivative:</strong> ∂f/∂xᵢ — derivative of f with respect to xᵢ, treating all other variables as constants.</p>
+          <p style="margin-top:1rem"><strong>Gradient:</strong> ∇f = [∂f/∂x₁, ..., ∂f/∂xₙ]ᵀ. Points in the direction of steepest ascent. Used in gradient descent: θ ← θ - α∇L(θ).</p>
+          <p style="margin-top:1rem"><strong>Jacobian:</strong> For f: ℝⁿ → ℝᵐ, the Jacobian J ∈ ℝᵐˣⁿ has Jᵢⱼ = ∂fᵢ/∂xⱼ. Generalizes the gradient to vector-valued functions.</p>
+          <p style="margin-top:1rem"><strong>Hessian:</strong> H = ∇²f. The matrix of second-order partial derivatives: Hᵢⱼ = ∂²f/∂xᵢ∂xⱼ. Used to classify critical points (positive definite → local minimum).</p>
+          <p style="margin-top:1rem"><strong>Chain Rule (multivariate):</strong> If z = f(g(x)), then ∂z/∂x = (∂z/∂g)(∂g/∂x). This is the mathematical foundation of backpropagation in neural networks.</p>
+          <p style="margin-top:1rem"><strong>Taylor Expansion:</strong> f(x+δ) ≈ f(x) + ∇f(x)ᵀδ + ½δᵀH(x)δ. The Hessian gives the second-order correction.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Unit 5 &amp; 6: Optimization — Gradient Descent &amp; KKT <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Convex Function:</strong> f is convex if f(λx + (1-λ)y) ≤ λf(x) + (1-λ)f(y). For convex f, any local minimum is a global minimum.</p>
+          <p style="margin-top:1rem"><strong>Gradient Descent:</strong> θₜ₊₁ = θₜ - α∇f(θₜ). Converges to global minimum for convex f with appropriate α. Step size α (learning rate) must be chosen carefully.</p>
+          <p style="margin-top:1rem"><strong>Convergence Condition:</strong> If ∇f is L-Lipschitz, gradient descent with α ≤ 1/L converges. Rate: f(θₜ) - f* ≤ O(1/t) for convex f.</p>
+          <p style="margin-top:1rem"><strong>Lagrange Multipliers:</strong> To minimize f(x) subject to g(x)=0: form L(x,λ) = f(x) - λg(x). Set ∇L = 0. The λ values are Lagrange multipliers.</p>
+          <p style="margin-top:1rem"><strong>KKT Conditions:</strong> For inequality constraints gᵢ(x) ≤ 0:</p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>Stationarity: ∇f(x*) + Σλᵢ∇gᵢ(x*) = 0</li>
+            <li>Primal feasibility: gᵢ(x*) ≤ 0</li>
+            <li>Dual feasibility: λᵢ ≥ 0</li>
+            <li>Complementary slackness: λᵢgᵢ(x*) = 0</li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- end accordion -->
+
+    <div class="floating-quote" style="margin-top:2rem">
+      <blockquote>"The solutions manual for MML is a must-have. Work through problems, not around them."</blockquote>
+      <cite>— BITS WILP Seniors</cite>
+    </div>
+  </div>
+
+  <!-- ISM NOTES -->
+  <div id="tab-ism" class="tab-content" id="ism">
+    <div style="margin-bottom:1.5rem;padding:1.25rem;background:var(--mint-soft);border-radius:var(--radius-sm)">
+      <strong style="color:var(--accent-green)">💡 ISM Strategy:</strong>
+      <span style="color:var(--text-mid);font-size:0.9rem"> ISM is the most scoring subject. Solve Devore problems daily. The exam is 80% numerical. The more you calculate, the faster and more accurate you get.</span>
+    </div>
+    <div class="accordion">
+
+      <div class="accordion-item">
+        <button class="accordion-header">Unit 1: Probability Foundations &amp; Bayes' Theorem <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Probability Axioms:</strong> P(Ω)=1, P(A)≥0 for all A, P(A∪B) = P(A)+P(B) for disjoint A,B.</p>
+          <p style="margin-top:1rem"><strong>Conditional Probability:</strong> P(A|B) = P(A∩B)/P(B). The probability of A given that B has occurred.</p>
+          <p style="margin-top:1rem"><strong>Independence:</strong> A and B are independent iff P(A∩B) = P(A)·P(B), equivalently P(A|B) = P(A).</p>
+          <p style="margin-top:1rem"><strong>Total Probability:</strong> P(B) = Σᵢ P(B|Aᵢ)P(Aᵢ) for a partition {Aᵢ} of the sample space.</p>
+          <p style="margin-top:1rem"><strong>Bayes' Theorem:</strong> P(A|B) = P(B|A)P(A)/P(B)</p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>P(A) = Prior probability</li>
+            <li>P(B|A) = Likelihood</li>
+            <li>P(B) = Marginal (Evidence) = Σ P(B|Aᵢ)P(Aᵢ)</li>
+            <li>P(A|B) = Posterior probability</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Unit 2 &amp; 3: Distributions — The Key Table <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <table>
+            <thead><tr><th>Distribution</th><th>Mean</th><th>Variance</th><th>PMF/PDF</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Bernoulli(p)</strong></td><td>p</td><td>p(1-p)</td><td>P(X=1)=p, P(X=0)=1-p</td></tr>
+              <tr><td><strong>Binomial(n,p)</strong></td><td>np</td><td>np(1-p)</td><td>C(n,k)pᵏ(1-p)ⁿ⁻ᵏ</td></tr>
+              <tr><td><strong>Poisson(λ)</strong></td><td>λ</td><td>λ</td><td>e⁻λλᵏ/k!</td></tr>
+              <tr><td><strong>Geometric(p)</strong></td><td>1/p</td><td>(1-p)/p²</td><td>(1-p)ᵏ⁻¹p</td></tr>
+              <tr><td><strong>Uniform(a,b)</strong></td><td>(a+b)/2</td><td>(b-a)²/12</td><td>1/(b-a) for x∈[a,b]</td></tr>
+              <tr><td><strong>Exponential(λ)</strong></td><td>1/λ</td><td>1/λ²</td><td>λe⁻λx for x≥0</td></tr>
+              <tr><td><strong>Normal(μ,σ²)</strong></td><td>μ</td><td>σ²</td><td>(1/σ√2π)exp(-(x-μ)²/2σ²)</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:1rem;color:var(--text-mid);font-size:0.9rem">💡 Memorize this table. These distributions appear in almost every exam and the parameters come up in every type of calculation.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Unit 4 &amp; 5: CLT, Confidence Intervals &amp; MLE <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Central Limit Theorem:</strong> For i.i.d. X₁,...,Xₙ with mean μ, variance σ²: X̄ ~ N(μ, σ²/n) as n→∞. Standard error = σ/√n.</p>
+          <p style="margin-top:1rem"><strong>Standardization:</strong> Z = (X̄ - μ)/(σ/√n) ~ N(0,1). Used to compute probabilities about sample means.</p>
+          <p style="margin-top:1rem"><strong>Confidence Intervals (σ known):</strong></p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>90% CI: X̄ ± 1.645(σ/√n)</li>
+            <li>95% CI: X̄ ± 1.96(σ/√n) ← Most common!</li>
+            <li>99% CI: X̄ ± 2.576(σ/√n)</li>
+          </ul>
+          <p style="margin-top:1rem"><strong>t-distribution (σ unknown):</strong> Use t critical value with n-1 degrees of freedom. CI: X̄ ± t*(s/√n).</p>
+          <p style="margin-top:1rem"><strong>MLE (Maximum Likelihood Estimation):</strong> Find θ that maximizes L(θ) = Π f(xᵢ|θ). Equivalently, maximize ℓ(θ) = Σ log f(xᵢ|θ).</p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>Exponential(λ): λ̂ = 1/x̄</li>
+            <li>Normal(μ,σ²): μ̂ = x̄, σ̂² = (1/n)Σ(xᵢ-x̄)²</li>
+            <li>Binomial(n,p): p̂ = x̄/n</li>
+            <li>Poisson(λ): λ̂ = x̄</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Unit 6: Hypothesis Testing — Complete Framework <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Framework:</strong> H₀ (null) vs H₁ (alternative). Choose α (significance level, typically 0.05).</p>
+          <p style="margin-top:1rem"><strong>Error Types:</strong></p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>Type I Error (α): Reject H₀ when it's true (false positive)</li>
+            <li>Type II Error (β): Fail to reject H₀ when it's false (false negative)</li>
+            <li>Power = 1 - β: Probability of correctly rejecting false H₀</li>
+          </ul>
+          <p style="margin-top:1rem"><strong>p-value:</strong> P(observing result as extreme | H₀ true). Reject H₀ if p-value &lt; α.</p>
+          <p style="margin-top:1rem"><strong>Test Selection Guide:</strong></p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>One sample, σ known → z-test</li>
+            <li>One sample, σ unknown → t-test (df = n-1)</li>
+            <li>Two samples → two-sample t-test</li>
+            <li>Proportions → z-test for proportions</li>
+            <li>Categorical data → Chi-square test</li>
+            <li>Multiple group means → ANOVA (F-test)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ML NOTES -->
+  <div id="tab-ml" class="tab-content" id="ml">
+    <div style="margin-bottom:1.5rem;padding:1.25rem;background:var(--blue-soft);border-radius:var(--radius-sm)">
+      <strong style="color:var(--accent-blue)">💡 ML Strategy:</strong>
+      <span style="color:var(--text-mid);font-size:0.9rem"> Run Géron's notebooks first, then read theory. Seeing output makes math click. Know scikit-learn API well for implementation questions.</span>
+    </div>
+    <div class="accordion">
+
+      <div class="accordion-item">
+        <button class="accordion-header">Bias-Variance Tradeoff &amp; Regularization <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Total Error:</strong> E[(y - ŷ)²] = Bias² + Variance + Irreducible Noise</p>
+          <p style="margin-top:1rem"><strong>Bias:</strong> Error from wrong assumptions in the model (model is too simple). High bias = underfitting.</p>
+          <p style="margin-top:1rem"><strong>Variance:</strong> Error from sensitivity to fluctuations in training data (model is too complex). High variance = overfitting.</p>
+          <p style="margin-top:1rem"><strong>Regularization:</strong></p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li><strong>L2 (Ridge):</strong> Adds λΣwᵢ² to loss. Shrinks weights toward 0 but rarely to exactly 0. Good when all features contribute.</li>
+            <li><strong>L1 (Lasso):</strong> Adds λΣ|wᵢ| to loss. Produces sparse solutions (some weights = 0). Good for feature selection.</li>
+            <li><strong>ElasticNet:</strong> Combines L1 and L2. Best of both worlds.</li>
+          </ul>
+          <p style="margin-top:1rem"><strong>L2 closed form (Ridge):</strong> w = (XᵀX + λI)⁻¹Xᵀy. Note: adding λI ensures invertibility even when XᵀX is singular!</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Support Vector Machines — Complete Theory <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Core Idea:</strong> Find the hyperplane wᵀx + b = 0 that maximizes the margin (2/||w||) between classes.</p>
+          <p style="margin-top:1rem"><strong>Optimization:</strong> Minimize ½||w||² subject to yᵢ(wᵀxᵢ+b) ≥ 1 for all i. This is a QP problem with a unique global minimum.</p>
+          <p style="margin-top:1rem"><strong>Support Vectors:</strong> Training points that lie exactly on the margin boundary (yᵢ(wᵀxᵢ+b) = 1). Only these determine the decision boundary.</p>
+          <p style="margin-top:1rem"><strong>Soft Margin SVM:</strong> Introduces slack variables ξᵢ ≥ 0: minimize ½||w||² + CΣξᵢ. Parameter C controls regularization: small C → wider margin (more tolerance), large C → harder margin.</p>
+          <p style="margin-top:1rem"><strong>Kernel Trick:</strong> Replace xᵢ·xⱼ with K(xᵢ,xⱼ) = φ(xᵢ)·φ(xⱼ) without computing φ explicitly.</p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>Linear: K(x,z) = xᵀz</li>
+            <li>Polynomial: K(x,z) = (xᵀz + c)ᵈ</li>
+            <li>RBF/Gaussian: K(x,z) = exp(-γ||x-z||²) ← most popular</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Decision Trees, Random Forests &amp; Boosting <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Decision Tree:</strong> Recursively partitions feature space. Split criterion: Information Gain (ID3), Gini Impurity (CART), Variance Reduction (regression).</p>
+          <p style="margin-top:1rem"><strong>Gini Impurity:</strong> G = 1 - Σpₖ². Perfect split G=0, worst G=0.5 (binary). Lower is better.</p>
+          <p style="margin-top:1rem"><strong>Information Gain:</strong> IG = H(parent) - Σ(|child|/|parent|)H(child). H(S) = -Σpₖlog₂pₖ (entropy).</p>
+          <p style="margin-top:1rem"><strong>Random Forest:</strong> Bagging (bootstrap sampling) + random feature subsets at each split. Reduces variance without increasing bias. Feature importance = average decrease in impurity.</p>
+          <p style="margin-top:1rem"><strong>Gradient Boosting:</strong> Ensemble where each tree corricts residuals of the previous. Loss function L(y,ŷ), each new tree fits -∂L/∂ŷ. XGBoost adds regularization and second-order gradients.</p>
+          <p style="margin-top:1rem"><strong>Bagging vs Boosting:</strong></p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>Bagging: parallel, reduces variance, good for high-variance models</li>
+            <li>Boosting: sequential, reduces bias, good for weak learners</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Clustering: K-Means &amp; EM Algorithm <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>K-Means Algorithm:</strong></p>
+          <ol style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>Initialize K centroids randomly</li>
+            <li>Assign each point to nearest centroid</li>
+            <li>Recompute centroids as mean of assigned points</li>
+            <li>Repeat until convergence</li>
+          </ol>
+          <p style="margin-top:1rem"><strong>K-Means objective:</strong> Minimize J = Σᵢ Σₖ rᵢₖ ||xᵢ - μₖ||². Convergence guaranteed but to local minimum only.</p>
+          <p style="margin-top:1rem"><strong>Choosing K:</strong> Elbow method (plot J vs K), Silhouette score, BIC/AIC for GMMs.</p>
+          <p style="margin-top:1rem"><strong>EM Algorithm (for GMMs):</strong></p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>E-step: Compute responsibilities rᵢₖ = P(component k | xᵢ, θ)</li>
+            <li>M-step: Update parameters π, μ, Σ using responsibilities</li>
+            <li>Guaranteed to increase log-likelihood at each iteration</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DNN NOTES -->
+  <div id="tab-dnn" class="tab-content" id="dnn">
+    <div style="margin-bottom:1.5rem;padding:1.25rem;background:var(--peach-soft);border-radius:var(--radius-sm)">
+      <strong style="color:var(--accent-orange)">💡 DNN Strategy:</strong>
+      <span style="color:var(--text-mid);font-size:0.9rem"> Theory + implementation both matter. Implement backprop from scratch once — this cements everything. Know the gate equations for LSTM and the attention formula for Transformers.</span>
+    </div>
+    <div class="accordion">
+
+      <div class="accordion-item">
+        <button class="accordion-header">Activation Functions — Properties &amp; When to Use <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <table>
+            <thead><tr><th>Function</th><th>Formula</th><th>Derivative</th><th>Range</th><th>Use When</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Sigmoid</strong></td><td>1/(1+e⁻ˣ)</td><td>σ(x)(1-σ(x))</td><td>(0,1)</td><td>Output layer (binary classification)</td></tr>
+              <tr><td><strong>Tanh</strong></td><td>(eˣ-e⁻ˣ)/(eˣ+e⁻ˣ)</td><td>1-tanh²(x)</td><td>(-1,1)</td><td>Hidden layers (zero-centered)</td></tr>
+              <tr><td><strong>ReLU</strong></td><td>max(0,x)</td><td>0 if x&lt;0, 1 if x&gt;0</td><td>[0,∞)</td><td>Hidden layers (default choice)</td></tr>
+              <tr><td><strong>Leaky ReLU</strong></td><td>max(αx,x)</td><td>α if x&lt;0, 1 if x&gt;0</td><td>(-∞,∞)</td><td>Prevents dying ReLU</td></tr>
+              <tr><td><strong>Softmax</strong></td><td>eˣⁱ/Σeˣʲ</td><td>Complex</td><td>(0,1)</td><td>Output layer (multiclass)</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:1rem;color:var(--text-mid);font-size:0.9rem">💡 Sigmoid/Tanh saturate → vanishing gradients. ReLU solves this but can "die" (always output 0). Leaky ReLU &amp; ELU address dying ReLU.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Backpropagation — Step by Step <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Forward Pass:</strong> Compute output layer by layer: z⁽ˡ⁾ = W⁽ˡ⁾a⁽ˡ⁻¹⁾ + b⁽ˡ⁾, a⁽ˡ⁾ = σ(z⁽ˡ⁾).</p>
+          <p style="margin-top:1rem"><strong>Compute Loss:</strong> e.g., Cross-entropy L = -Σyᵢ log(ŷᵢ).</p>
+          <p style="margin-top:1rem"><strong>Backward Pass (output layer):</strong> δ⁽ᴸ⁾ = ∂L/∂z⁽ᴸ⁾ = ŷ - y (for softmax + cross-entropy).</p>
+          <p style="margin-top:1rem"><strong>Backward Pass (hidden layer l):</strong> δ⁽ˡ⁾ = (W⁽ˡ⁺¹⁾)ᵀδ⁽ˡ⁺¹⁾ ⊙ σ'(z⁽ˡ⁾)</p>
+          <p style="margin-top:1rem"><strong>Weight Updates:</strong> ∂L/∂W⁽ˡ⁾ = δ⁽ˡ⁾(a⁽ˡ⁻¹⁾)ᵀ, ∂L/∂b⁽ˡ⁾ = δ⁽ˡ⁾. Then: W ← W - α·∂L/∂W.</p>
+          <p style="margin-top:1rem"><strong>Vanishing Gradients:</strong> With sigmoid/tanh, σ'(z) ≤ 0.25. Over L layers, gradients shrink as 0.25ᴸ. Solutions: ReLU, BatchNorm, residual connections, LSTM.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">LSTM — All Gate Equations <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>LSTM solves vanishing gradients for sequences via the cell state highway.</strong></p>
+          <p style="margin-top:1rem"><strong>Gates (all use sigmoid → output in (0,1)):</strong></p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li><strong>Forget gate:</strong> fₜ = σ(Wf·[hₜ₋₁, xₜ] + bf) — what to forget from cell state</li>
+            <li><strong>Input gate:</strong> iₜ = σ(Wᵢ·[hₜ₋₁, xₜ] + bᵢ) — what to update</li>
+            <li><strong>Candidate:</strong> C̃ₜ = tanh(Wc·[hₜ₋₁, xₜ] + bc) — new candidate values</li>
+            <li><strong>Output gate:</strong> oₜ = σ(Wo·[hₜ₋₁, xₜ] + bo) — what to output</li>
+          </ul>
+          <p style="margin-top:1rem"><strong>State Updates:</strong></p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>Cell state: Cₜ = fₜ ⊙ Cₜ₋₁ + iₜ ⊙ C̃ₜ</li>
+            <li>Hidden state: hₜ = oₜ ⊙ tanh(Cₜ)</li>
+          </ul>
+          <p style="margin-top:1rem"><strong>Key insight:</strong> The cell state Cₜ flows through the network with only element-wise operations, creating a gradient highway that avoids vanishing gradients.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Transformers &amp; Attention Mechanism <span class="acc-icon">▼</span></button>
+        <div class="accordion-body">
+          <p><strong>Attention Formula:</strong> Attention(Q, K, V) = softmax(QKᵀ/√dₖ)V</p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>Q (Queries): what we're looking for</li>
+            <li>K (Keys): what each position has to offer</li>
+            <li>V (Values): the actual content to aggregate</li>
+            <li>√dₖ: scaling to prevent vanishing softmax gradients in high dimensions</li>
+          </ul>
+          <p style="margin-top:1rem"><strong>Multi-Head Attention:</strong> Run h attention heads in parallel with different learned Q,K,V projections, then concatenate and project. Allows attending to different representation subspaces simultaneously.</p>
+          <p style="margin-top:1rem"><strong>Transformer vs RNN:</strong></p>
+          <ul style="margin-left:1.5rem;margin-top:0.5rem;color:var(--text-mid)">
+            <li>Attention: parallelizable, O(n²) complexity, full context access</li>
+            <li>RNN: sequential, O(n) complexity, limited context via hidden state</li>
+          </ul>
+          <p style="margin-top:1rem"><strong>Positional Encoding:</strong> PE(pos,2i) = sin(pos/10000^(2i/d)), PE(pos,2i+1) = cos(pos/10000^(2i/d)). Injected into embeddings to encode position.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- end section -->
+
+<!-- Resources Section -->
+<div style="background:var(--lavender-soft);padding:3rem 1.5rem">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="section-header">
+      <h2>Top Free Online Resources</h2>
+      <p>Curated from the BITS WILP community — 100% free, 100% legitimate.</p>
+    </div>
+    <ul class="resource-list">
+      <li><span class="res-icon">📘</span><div class="res-info"><strong>MML Book (Free PDF)</strong><small>mml-book.github.io — Official Deisenroth textbook + exercises + notebooks</small></div></li>
+      <li><span class="res-icon">📊</span><div class="res-info"><strong>Think Stats (Free PDF)</strong><small>Allen Downey — Practical statistics with Python</small></div></li>
+      <li><span class="res-icon">🤖</span><div class="res-info"><strong>PRML by Bishop (Free)</strong><small>Microsoft Research official PDF — comprehensive ML theory</small></div></li>
+      <li><span class="res-icon">🧠</span><div class="res-info"><strong>Deep Learning Book (Free)</strong><small>deeplearningbook.org — Goodfellow, Bengio &amp; Courville official site</small></div></li>
+      <li><span class="res-icon">💻</span><div class="res-info"><strong>ageron/handson-ml3</strong><small>GitHub — Official notebooks for Géron's book. Run these first for ML &amp; DNN!</small></div></li>
+      <li><span class="res-icon">🎥</span><div class="res-info"><strong>StatQuest YouTube</strong><small>youtube.com/@statquest — Statistics &amp; ML explained visually. Superb for ISM concepts.</small></div></li>
+      <li><span class="res-icon">🎥</span><div class="res-info"><strong>3Blue1Brown — Essence of Linear Algebra</strong><small>YouTube playlist — The best visual introduction to linear algebra. Must-watch for MFML.</small></div></li>
+      <li><span class="res-icon">🌐</span><div class="res-info"><strong>CrackBITSWILP</strong><small>crackbitswilp.in — Best WILP community site, PYQs, tips, study guides</small></div></li>
+    </ul>
+  </div>
+</div>
+
+<div class="moti-banner">
+  <h2>You already know more than you think you do.</h2>
+  <p>Confidence comes from reviewing what you've learned, not from worrying about what you haven't. Keep going. 💜</p>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><h4>🎓 EC3 Prep Hub</h4><p>Free, community-built prep for BITS WILP AIML. Not affiliated with BITS Pilani.</p></div>
+    <div><h4>Quick Links</h4><ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="mocktest.html">Mock Tests</a></li>
+      <li><a href="revision.html">Quick Revision</a></li>
+      <li><a href="confidence.html">Confidence Booster</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom"><p>Disclaimer: Independent student resource. Not affiliated with BITS Pilani. Notes are original summaries for educational purposes. Verify technical content with official textbooks. Built with 💜 for the WILP community.</p></div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syllabus | EC3 Prep Hub — BITS WILP AIML</title>
+  <meta name="description" content="Complete EC3 syllabus for BITS WILP MTech AIML — MFML, ISM, ML, DNN unit-wise breakdown." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<nav class="navbar">
+  <a href="../index.html" class="nav-brand"><div class="logo-icon">🎓</div><span>EC3 Prep Hub</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="syllabus.html" class="active">Syllabus</a></li>
+    <li><a href="notes.html">Notes</a></li>
+    <li><a href="pyq.html">PYQs</a></li>
+    <li><a href="mocktest.html">Mock Tests</a></li>
+    <li><a href="tips.html">Exam Tips</a></li>
+    <li><a href="revision.html">Quick Revision</a></li>
+    <li><a href="confidence.html">Confidence Booster</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="hero" style="padding:3rem 1.5rem 2.5rem">
+  <div class="hero-badge">📋 Complete Semester 1 Syllabus</div>
+  <h1>Know What's <span class="highlight">On the Exam</span></h1>
+  <p class="tagline">Understanding the exact scope is half the battle. Study smart, not just hard.</p>
+  <p class="micro-copy">💡 Pro tip: Topics that appear in PYQs are almost always exam favourites.</p>
+</section>
+
+<div class="section">
+  <!-- Overview Table -->
+  <div class="section-header">
+    <h2>Semester 1 at a Glance</h2>
+    <p>4 subjects · EC3 (End Semester) is now closed-book. Prepare accordingly.</p>
+  </div>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Subject</th><th>Code</th><th>Difficulty</th><th>Exam Strategy</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td><strong>Mathematics for Machine Learning</strong></td><td>MFML</td><td><span class="diff-badge diff-hard">Toughest</span></td><td>Start Week 1, daily practice</td></tr>
+      <tr><td>2</td><td><strong>Introduction to Statistical Methods</strong></td><td>ISM</td><td><span class="diff-badge diff-easy">Most Scoring</span></td><td>Solve all Devore problems</td></tr>
+      <tr><td>3</td><td><strong>Machine Learning</strong></td><td>ML / ZG565</td><td><span class="diff-badge diff-medium">Moderate</span></td><td>Hands-on notebooks + theory</td></tr>
+      <tr><td>4</td><td><strong>Deep Neural Networks</strong></td><td>DNN</td><td><span class="diff-badge diff-hard">Hard</span></td><td>Theory + Implementation balance</td></tr>
+    </tbody>
+  </table>
+
+  <!-- MFML -->
+  <div style="margin-top:3rem" id="mfml">
+    <h2 style="font-family:'DM Serif Display',serif;color:var(--text-dark);margin-bottom:0.5rem">∑ Mathematics for Machine Learning (MFML)</h2>
+    <p style="color:var(--text-mid);margin-bottom:1.5rem">Foundation for everything. Cannot be crammed — start early and understand deeply.</p>
+    <table>
+      <thead><tr><th>Unit</th><th>Topics</th><th>Key Focus for EC3</th></tr></thead>
+      <tbody>
+        <tr class="subject-mfml">
+          <td><strong>Unit 1</strong><br>Linear Algebra</td>
+          <td>Vectors &amp; Vector Spaces, Linear Maps, Matrices, Solving Linear Systems, Gaussian Elimination, Matrix Decomposition (LU, QR)</td>
+          <td>Matrix operations, rank, null space, basis</td>
+        </tr>
+        <tr class="subject-mfml">
+          <td><strong>Unit 2</strong><br>Analytic Geometry</td>
+          <td>Norms, Inner Products, Orthogonality, Projections, Rotations, Angles between vectors</td>
+          <td>Orthogonal projections, Gram-Schmidt</td>
+        </tr>
+        <tr class="subject-mfml">
+          <td><strong>Unit 3</strong><br>Matrix Decompositions</td>
+          <td>Eigenvalues &amp; Eigenvectors, Diagonalization, SVD (Singular Value Decomposition), PCA foundation</td>
+          <td>SVD, Eigendecomposition, PCA derivation</td>
+        </tr>
+        <tr class="subject-mfml">
+          <td><strong>Unit 4</strong><br>Vector Calculus</td>
+          <td>Partial Derivatives, Gradients, Jacobian, Hessian, Chain Rule, Backpropagation foundation</td>
+          <td>Gradient computation, multivariate chain rule</td>
+        </tr>
+        <tr class="subject-mfml">
+          <td><strong>Unit 5</strong><br>Probability &amp; Distributions</td>
+          <td>Probability spaces, Random Variables, Expectation, Variance, Covariance, Key distributions, Bayes' theorem</td>
+          <td>Gaussian, Bernoulli, Poisson distributions</td>
+        </tr>
+        <tr class="subject-mfml">
+          <td><strong>Unit 6</strong><br>Continuous Optimization</td>
+          <td>Unconstrained optimization, Gradient Descent, Convexity, Lagrange Multipliers, KKT conditions</td>
+          <td>Convex functions, gradient descent convergence</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="floating-quote" style="margin-top:1rem">
+      <blockquote>"Linear algebra is the language of machine learning. Invest the time to speak it fluently."</blockquote>
+      <cite>— Community Wisdom, BITS WILP Seniors</cite>
+    </div>
+  </div>
+
+  <!-- ISM -->
+  <div style="margin-top:3rem" id="ism">
+    <h2 style="font-family:'DM Serif Display',serif;color:var(--text-dark);margin-bottom:0.5rem">📊 Introduction to Statistical Methods (ISM)</h2>
+    <p style="color:var(--text-mid);margin-bottom:1.5rem">Your highest-scoring subject. Nail the numericals and you'll top this one.</p>
+    <table>
+      <thead><tr><th>Unit</th><th>Topics</th><th>Key Focus for EC3</th></tr></thead>
+      <tbody>
+        <tr class="subject-ism">
+          <td><strong>Unit 1</strong><br>Probability Foundations</td>
+          <td>Sample Spaces, Events, Probability Axioms, Conditional Probability, Independence, Bayes' Theorem</td>
+          <td>Bayes' theorem applications, conditional probability</td>
+        </tr>
+        <tr class="subject-ism">
+          <td><strong>Unit 2</strong><br>Random Variables</td>
+          <td>Discrete &amp; Continuous RVs, PMF, PDF, CDF, Expected Value, Variance, Covariance, Correlation</td>
+          <td>E[X], Var(X) calculations, joint distributions</td>
+        </tr>
+        <tr class="subject-ism">
+          <td><strong>Unit 3</strong><br>Probability Distributions</td>
+          <td>Bernoulli, Binomial, Poisson, Geometric (discrete); Uniform, Exponential, Normal, Gamma (continuous)</td>
+          <td>Parameter identification, distribution fitting</td>
+        </tr>
+        <tr class="subject-ism">
+          <td><strong>Unit 4</strong><br>Sampling &amp; CLT</td>
+          <td>Population vs Sample, Sampling Distributions, Central Limit Theorem, Law of Large Numbers, Sample Statistics</td>
+          <td>CLT applications, sampling distribution of mean</td>
+        </tr>
+        <tr class="subject-ism">
+          <td><strong>Unit 5</strong><br>Statistical Estimation</td>
+          <td>Point Estimation, Confidence Intervals (z &amp; t), MLE (Maximum Likelihood Estimation), Method of Moments</td>
+          <td>CI calculations, MLE derivations</td>
+        </tr>
+        <tr class="subject-ism">
+          <td><strong>Unit 6</strong><br>Hypothesis Testing</td>
+          <td>Null vs Alternative Hypothesis, Type I &amp; II Errors, p-values, z-test, t-test, Chi-square, ANOVA</td>
+          <td>Test selection, p-value interpretation</td>
+        </tr>
+        <tr class="subject-ism">
+          <td><strong>Unit 7</strong><br>Linear Regression</td>
+          <td>Simple &amp; Multiple Linear Regression, OLS, R², Residual Analysis, Assumptions</td>
+          <td>OLS derivation, R² interpretation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ML -->
+  <div style="margin-top:3rem" id="ml">
+    <h2 style="font-family:'DM Serif Display',serif;color:var(--text-dark);margin-bottom:0.5rem">🤖 Machine Learning (ML / ZG565)</h2>
+    <p style="color:var(--text-mid);margin-bottom:1.5rem">Theory + implementation. Run Géron's notebooks alongside your notes.</p>
+    <table>
+      <thead><tr><th>Unit</th><th>Topics</th><th>Key Focus for EC3</th></tr></thead>
+      <tbody>
+        <tr class="subject-ml">
+          <td><strong>Unit 1</strong><br>Supervised Learning</td>
+          <td>Linear Regression, Logistic Regression, k-NN, Naive Bayes, Training &amp; Testing</td>
+          <td>Loss functions, gradient descent, regularization</td>
+        </tr>
+        <tr class="subject-ml">
+          <td><strong>Unit 2</strong><br>Model Evaluation</td>
+          <td>Confusion Matrix, Precision, Recall, F1, ROC-AUC, Cross-validation, Bias-Variance Tradeoff</td>
+          <td>Metric selection for different problems</td>
+        </tr>
+        <tr class="subject-ml">
+          <td><strong>Unit 3</strong><br>SVMs</td>
+          <td>Margin Maximization, Support Vectors, Hard &amp; Soft Margin, Kernel Trick, RBF, Polynomial Kernels</td>
+          <td>SVM math, kernel selection</td>
+        </tr>
+        <tr class="subject-ml">
+          <td><strong>Unit 4</strong><br>Decision Trees &amp; Ensembles</td>
+          <td>Decision Trees, Random Forests, Bagging, Boosting (AdaBoost, XGBoost, Gradient Boosting)</td>
+          <td>Ensemble methods, feature importance</td>
+        </tr>
+        <tr class="subject-ml">
+          <td><strong>Unit 5</strong><br>Unsupervised Learning</td>
+          <td>K-Means, Hierarchical Clustering, DBSCAN, PCA, t-SNE, EM Algorithm, GMMs</td>
+          <td>K-means convergence, PCA steps, EM theory</td>
+        </tr>
+        <tr class="subject-ml">
+          <td><strong>Unit 6</strong><br>Regularization &amp; Optimization</td>
+          <td>L1 (Lasso), L2 (Ridge), ElasticNet, Dropout, Early Stopping, SGD variants</td>
+          <td>When to use L1 vs L2, effect on weights</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- DNN -->
+  <div style="margin-top:3rem" id="dnn">
+    <h2 style="font-family:'DM Serif Display',serif;color:var(--text-dark);margin-bottom:0.5rem">🧠 Deep Neural Networks (DNN)</h2>
+    <p style="color:var(--text-mid);margin-bottom:1.5rem">Both theory (backprop, activations) and code (TensorFlow/PyTorch) are tested. Balance both.</p>
+    <table>
+      <thead><tr><th>Unit</th><th>Topics</th><th>Key Focus for EC3</th></tr></thead>
+      <tbody>
+        <tr class="subject-dnn">
+          <td><strong>Unit 1</strong><br>Feedforward Networks</td>
+          <td>Perceptron, Multi-layer Networks, Activation Functions (ReLU, Sigmoid, Tanh, Softmax), Forward Pass</td>
+          <td>Activation function properties, network capacity</td>
+        </tr>
+        <tr class="subject-dnn">
+          <td><strong>Unit 2</strong><br>Backpropagation</td>
+          <td>Chain Rule, Computational Graphs, Vanishing/Exploding Gradients, Weight Initialization, Gradient Flow</td>
+          <td>Manual backprop derivation</td>
+        </tr>
+        <tr class="subject-dnn">
+          <td><strong>Unit 3</strong><br>Optimization</td>
+          <td>SGD, Momentum, RMSProp, Adam, Learning Rate Schedules, Batch Normalization, Layer Normalization</td>
+          <td>Adam update rule, BatchNorm math</td>
+        </tr>
+        <tr class="subject-dnn">
+          <td><strong>Unit 4</strong><br>CNNs</td>
+          <td>Convolution, Pooling, Feature Maps, Stride, Padding, Classic Architectures (LeNet, VGG, ResNet)</td>
+          <td>Output dimension calculation, residual connections</td>
+        </tr>
+        <tr class="subject-dnn">
+          <td><strong>Unit 5</strong><br>RNNs &amp; LSTMs</td>
+          <td>Sequence Modeling, Vanilla RNN, LSTM gates, GRU, Bidirectional RNNs, Time-series applications</td>
+          <td>LSTM gate equations, gradient flow</td>
+        </tr>
+        <tr class="subject-dnn">
+          <td><strong>Unit 6</strong><br>Attention &amp; Transformers</td>
+          <td>Attention Mechanism, Self-Attention, Multi-Head Attention, Transformer Architecture, Positional Encoding</td>
+          <td>Attention math, Transformer vs RNN tradeoffs</td>
+        </tr>
+        <tr class="subject-dnn">
+          <td><strong>Unit 7</strong><br>Regularization &amp; Advanced</td>
+          <td>Dropout, Weight Decay, Data Augmentation, Transfer Learning, Fine-tuning, Knowledge Distillation</td>
+          <td>Transfer learning strategy, knowledge distillation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Prescribed Textbooks -->
+  <div style="margin-top:3rem">
+    <div class="section-header" style="text-align:left">
+      <h2>Prescribed Textbooks</h2>
+      <p>These are the official exam references. Know them well.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card purple">
+        <div class="card-badge">MFML</div>
+        <h3>Mathematics for Machine Learning</h3>
+        <p>Deisenroth, Faisal &amp; Ong<br><small style="color:var(--accent-green)">✅ Free PDF available at mml-book.github.io</small></p>
+      </div>
+      <div class="card purple">
+        <div class="card-badge">MFML</div>
+        <h3>Linear Algebra &amp; Optimization for ML</h3>
+        <p>Charu C. Aggarwal<br><small>Also: Gilbert Strang — Introduction to Linear Algebra (5th Ed.)</small></p>
+      </div>
+      <div class="card green">
+        <div class="card-badge">ISM</div>
+        <h3>Probability &amp; Statistics for Engineering</h3>
+        <p>J. L. Devore — <strong>Solve ALL problems!</strong><br><small>This is your primary weapon for ISM.</small></p>
+      </div>
+      <div class="card green">
+        <div class="card-badge">ISM</div>
+        <h3>Statistics for Data Scientists</h3>
+        <p>Maurits Kaptein<br><small style="color:var(--accent-green)">✅ Think Stats (Free PDF) — Allen Downey</small></p>
+      </div>
+      <div class="card blue">
+        <div class="card-badge">ML</div>
+        <h3>Hands-On ML with Scikit-Learn, Keras &amp; TF</h3>
+        <p>Aurélien Géron<br><small>Run notebooks first, then read theory!</small></p>
+      </div>
+      <div class="card blue">
+        <div class="card-badge">ML</div>
+        <h3>Pattern Recognition and Machine Learning</h3>
+        <p>Christopher M. Bishop (PRML)<br><small style="color:var(--accent-green)">✅ Free PDF via Microsoft Research</small></p>
+      </div>
+      <div class="card orange">
+        <div class="card-badge">DNN</div>
+        <h3>Deep Learning</h3>
+        <p>Goodfellow, Bengio &amp; Courville<br><small style="color:var(--accent-green)">✅ Free at deeplearningbook.org</small></p>
+      </div>
+      <div class="card orange">
+        <div class="card-badge">DNN</div>
+        <h3>Neural Networks and Deep Learning</h3>
+        <p>Michael Nielsen<br><small style="color:var(--accent-green)">✅ Free at neuralnetworksanddeeplearning.com</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="moti-banner">
+  <h2>You don't need to memorize everything —<br>you need to understand the core ideas deeply.</h2>
+  <p>Examiners test understanding, not rote learning. Practice makes perfect. 🌟</p>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><h4>🎓 EC3 Prep Hub</h4><p>Free, community-built prep for BITS WILP AIML. Not affiliated with BITS Pilani.</p></div>
+    <div><h4>Quick Links</h4><ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="mocktest.html">Mock Tests</a></li>
+      <li><a href="pyq.html">PYQs</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom"><p>Disclaimer: Independent student resource. Not affiliated with BITS Pilani. Content for educational purposes only. Verify with official sources. Built with 💜 for the WILP community.</p></div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

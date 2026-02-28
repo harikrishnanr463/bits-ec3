@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Revision | EC3 Prep Hub — BITS WILP AIML</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<nav class="navbar">
+  <a href="../index.html" class="nav-brand"><div class="logo-icon">🎓</div><span>EC3 Prep Hub</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="syllabus.html">Syllabus</a></li>
+    <li><a href="notes.html">Notes</a></li>
+    <li><a href="pyq.html">PYQs</a></li>
+    <li><a href="mocktest.html">Mock Tests</a></li>
+    <li><a href="tips.html">Exam Tips</a></li>
+    <li><a href="revision.html" class="active">Quick Revision</a></li>
+    <li><a href="confidence.html">Confidence Booster</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="hero" style="padding:3rem 1.5rem 2rem">
+  <div class="hero-badge">✅ Quick Revision Checklist</div>
+  <h1>Track Your Progress,<br><span class="highlight">Own Your Preparation</span></h1>
+  <p class="tagline">Tick off topics as you revise them. Your progress is saved automatically. Watch your confidence grow topic by topic.</p>
+  <p class="micro-copy">💜 Every tick is a win. Small steps daily = Big success on exam day.</p>
+</section>
+
+<div class="section">
+  <div id="progress-summary" style="background:linear-gradient(135deg,var(--lavender-soft),var(--blue-soft));border-radius:var(--radius);padding:1.5rem 2rem;margin-bottom:2rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap">
+    <div>
+      <div style="font-family:'DM Serif Display',serif;font-size:2.5rem;color:var(--accent-purple)" id="progress-num">0%</div>
+      <div style="font-size:0.85rem;color:var(--text-mid);font-weight:600">Overall Revision Progress</div>
+    </div>
+    <div style="flex:1;min-width:200px">
+      <div class="progress-bar-wrap"><div class="progress-bar-fill" id="main-progress" style="width:0%"></div></div>
+      <p style="font-size:0.8rem;color:var(--text-light);margin-top:0.5rem" id="progress-text">0 topics completed · Keep going!</p>
+    </div>
+    <button class="btn btn-secondary" onclick="clearProgress()" style="font-size:0.8rem;padding:8px 16px">🔄 Reset All</button>
+  </div>
+
+  <!-- MFML Checklist -->
+  <h2 style="font-family:'DM Serif Display',serif;color:var(--text-dark);margin-bottom:1rem;margin-top:2rem">∑ MFML — Mathematics for Machine Learning</h2>
+  <ul class="checklist" id="checklist-mfml">
+    <li onclick="toggle(this)"><span class="check-box"></span>Vectors, dot products, and norms</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Linear independence and basis</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Matrix rank and null space (Rank-Nullity theorem)</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Matrix operations: transpose, inverse, determinant</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Orthogonality and orthogonal projection</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Gram-Schmidt orthogonalization</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Eigenvalues and eigenvectors — computation</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Diagonalization and Spectral theorem</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Positive definiteness — conditions and check</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>SVD — derivation and components (U, Σ, V)</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Low-rank approximation via SVD</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Gradient and partial derivatives</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Jacobian and Hessian — compute and interpret</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Chain rule (multivariate) — backprop foundation</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Taylor expansion (first and second order)</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Convex functions — definition and properties</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Gradient descent — convergence conditions</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Lagrange multipliers</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>KKT conditions — all 4 conditions</li>
+  </ul>
+
+  <!-- ISM Checklist -->
+  <h2 style="font-family:'DM Serif Display',serif;color:var(--text-dark);margin-bottom:1rem;margin-top:2.5rem">📊 ISM — Introduction to Statistical Methods</h2>
+  <ul class="checklist" id="checklist-ism">
+    <li onclick="toggle(this)"><span class="check-box"></span>Probability axioms and basic rules</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Conditional probability and independence</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Bayes' theorem — prior, likelihood, posterior</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Discrete RV: PMF, CDF, E[X], Var(X)</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Continuous RV: PDF, CDF, E[X], Var(X)</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Bernoulli and Binomial distributions</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Poisson distribution and applications</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Exponential distribution (memoryless property)</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Normal distribution — standardization and Z-score</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Central Limit Theorem — statement and application</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Sampling distribution of mean — SE = σ/√n</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Confidence intervals (z-based, σ known)</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Confidence intervals (t-based, σ unknown)</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>MLE derivation — Exponential, Normal, Binomial</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Hypothesis testing — 5-step framework</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Type I and Type II errors, power</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>z-test and t-test — when to use each</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>p-value — correct interpretation</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Simple linear regression — OLS and R²</li>
+  </ul>
+
+  <!-- ML Checklist -->
+  <h2 style="font-family:'DM Serif Display',serif;color:var(--text-dark);margin-bottom:1rem;margin-top:2.5rem">🤖 ML — Machine Learning</h2>
+  <ul class="checklist" id="checklist-ml">
+    <li onclick="toggle(this)"><span class="check-box"></span>Linear regression — OLS and gradient descent</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Logistic regression — sigmoid and log-loss</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>k-NN — algorithm and hyperparameter k</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Bias-variance tradeoff — E[error] = Bias² + Var + Noise</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Confusion matrix — TP, FP, TN, FN</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Precision, Recall, F1-Score calculations</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>ROC curve and AUC interpretation</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>k-fold cross-validation — methodology</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>L1 (Lasso) regularization — effect on weights</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>L2 (Ridge) regularization — closed form solution</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>SVM — margin, support vectors, optimization</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Kernel trick — RBF, polynomial kernels</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Soft margin SVM — parameter C effect</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Decision trees — Gini, Information Gain</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Random Forest — bagging + random features</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Gradient Boosting — residual fitting</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>K-Means algorithm — steps and convergence</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>EM Algorithm — E-step and M-step (GMM)</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>PCA — via SVD, explained variance</li>
+  </ul>
+
+  <!-- DNN Checklist -->
+  <h2 style="font-family:'DM Serif Display',serif;color:var(--text-dark);margin-bottom:1rem;margin-top:2.5rem">🧠 DNN — Deep Neural Networks</h2>
+  <ul class="checklist" id="checklist-dnn">
+    <li onclick="toggle(this)"><span class="check-box"></span>Activation functions — Sigmoid, Tanh, ReLU properties</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Forward pass — layer-by-layer computation</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Loss functions — MSE, cross-entropy</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Backpropagation — chain rule derivation</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Vanishing gradient problem — causes and solutions</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Weight initialization (Xavier, He)</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>SGD, Momentum optimizer</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Adam optimizer — update rule</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Batch Normalization — formula and effect</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Dropout — training vs inference</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Convolution operation — output size formula</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Pooling layers — max/average pooling</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Residual connections (ResNet) — why they work</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Vanilla RNN — limitations for long sequences</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>LSTM — all 4 gate equations</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>GRU — simplified gating</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Attention mechanism — Q, K, V and formula</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Multi-head attention — purpose</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Transformer architecture overview</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Transfer learning — feature extraction vs fine-tuning</li>
+    <li onclick="toggle(this)"><span class="check-box"></span>Knowledge distillation — teacher-student framework</li>
+  </ul>
+
+</div>
+
+<div class="moti-banner">
+  <h2>Every topic you tick is a topic you own.</h2>
+  <p>You're building real, lasting knowledge — not just cramming. That's what makes the difference on exam day. 🌟</p>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><h4>🎓 EC3 Prep Hub</h4><p>Free, community-built prep for BITS WILP AIML. Not affiliated with BITS Pilani.</p></div>
+    <div><h4>Quick Links</h4><ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="mocktest.html">Mock Tests</a></li>
+      <li><a href="confidence.html">Confidence Booster</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom"><p>Disclaimer: Independent student resource. Not affiliated with BITS Pilani. Built with 💜 for the WILP community.</p></div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+// Override to use better storage key and update progress bar
+const allItems = [];
+document.querySelectorAll('.checklist li').forEach((li, i) => {
+  allItems.push(li);
+});
+
+function toggle(li) {
+  li.classList.toggle('checked');
+  li.querySelector('.check-box').textContent = li.classList.contains('checked') ? '✓' : '';
+  updateProgress();
+  saveAll();
+  if (li.classList.contains('checked')) showToast('✅ Topic mastered! Keep going!');
+}
+
+function updateProgress() {
+  const total = allItems.length;
+  const done  = allItems.filter(li => li.classList.contains('checked')).length;
+  const pct   = Math.round((done/total)*100);
+  document.getElementById('progress-num').textContent = pct + '%';
+  document.getElementById('main-progress').style.width = pct + '%';
+  const msgs = {0:'You\'re just getting started — that\'s the hardest step!', 25:'Great momentum! 25% done and counting.', 50:'Halfway there! You\'re doing amazing.', 75:'So close! 75% done — the end is in sight.', 100:'🎉 Complete revision done! You\'re ready!'};
+  const key = Object.keys(msgs).reverse().find(k => pct >= k);
+  document.getElementById('progress-text').textContent = `${done} / ${total} topics · ${msgs[key]}`;
+}
+
+function saveAll() {
+  const states = allItems.map(li => li.classList.contains('checked'));
+  try { localStorage.setItem('ec3_rev_v2', JSON.stringify(states)); } catch(e) {}
+}
+
+function clearProgress() {
+  if (confirm('Reset all progress? This cannot be undone.')) {
+    allItems.forEach(li => { li.classList.remove('checked'); li.querySelector('.check-box').textContent=''; });
+    updateProgress(); saveAll();
+  }
+}
+
+// Load on start
+try {
+  const saved = JSON.parse(localStorage.getItem('ec3_rev_v2') || '[]');
+  allItems.forEach((li, i) => {
+    if (saved[i]) { li.classList.add('checked'); li.querySelector('.check-box').textContent='✓'; }
+  });
+} catch(e) {}
+updateProgress();
+</script>
+</body>
+</html>

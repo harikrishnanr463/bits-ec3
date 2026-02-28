@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EC3 Prep Hub | BITS Pilani WILP AIML Semester 1</title>
+  <meta name="description" content="Free, comprehensive EC3 exam preparation for BITS Pilani WILP MTech AIML students. Mock tests, notes, PYQs, and exam strategy for MFML, ISM, ML, and DNN." />
+  <meta name="keywords" content="BITS WILP, AIML, MTech, EC3 exam prep, MFML, ISM, Machine Learning, Deep Learning, mock test, free study material" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourusername.github.io/bits-ec3/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="EC3 Prep Hub | BITS WILP AIML" />
+  <meta property="og:description" content="Free EC3 exam prep — mock tests, notes, PYQs and strategy for MFML, ISM, ML & DNN." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .subject-quick { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1.5rem; }
+    .steps { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1.5rem; margin-top:2rem; }
+    .step { text-align:center; padding:1.5rem 1rem; }
+    .step .step-icon { font-size:2.5rem; margin-bottom:0.75rem; }
+    .step h4 { font-weight:800; color:var(--text-dark); margin-bottom:0.4rem; }
+    .step p { font-size:0.875rem; color:var(--text-mid); }
+    .testimonial-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1.25rem; }
+    .testi-card { background:white; border-radius:var(--radius); padding:1.5rem; border:1px solid rgba(201,184,240,0.2); box-shadow:var(--shadow-soft); }
+    .testi-card p { font-size:0.9rem; color:var(--text-mid); font-style:italic; line-height:1.7; }
+    .testi-card .author { font-size:0.8rem; font-weight:700; color:var(--accent-purple); margin-top:0.75rem; }
+    .bg-lavender { background: var(--lavender-soft); }
+    .bg-cream { background: var(--cream); }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">
+    <div class="logo-icon">🎓</div>
+    <span>EC3 Prep Hub</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="pages/syllabus.html">Syllabus</a></li>
+    <li><a href="pages/notes.html">Notes</a></li>
+    <li><a href="pages/pyq.html">PYQs</a></li>
+    <li><a href="pages/mocktest.html">Mock Tests</a></li>
+    <li><a href="pages/tips.html">Exam Tips</a></li>
+    <li><a href="pages/revision.html">Quick Revision</a></li>
+    <li><a href="pages/confidence.html">Confidence Booster</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-badge">✨ BITS WILP · M.Tech AIML · Semester 1 · EC3</div>
+  <h1>Your <span class="highlight">EC3 Exam</span><br>is Completely Conquerable</h1>
+  <p class="tagline">Free, structured preparation for MFML, ISM, Machine Learning &amp; Deep Neural Networks — designed to build real confidence, not just test anxiety.</p>
+  <p class="micro-copy">💚 You've got this. Small steps daily = Big success on exam day.</p>
+  <div class="btn-group">
+    <a href="pages/mocktest.html" class="btn btn-primary">🚀 Start Mock Test</a>
+    <a href="pages/notes.html" class="btn btn-secondary">📚 Browse Notes</a>
+  </div>
+
+  <!-- Floating cards -->
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:3rem;position:relative">
+    <div style="background:white;border-radius:12px;padding:0.75rem 1.25rem;box-shadow:var(--shadow-soft);font-size:0.85rem;font-weight:700;color:var(--text-dark);border:1px solid rgba(201,184,240,0.3)">
+      ∑ MFML <span style="color:var(--text-light);font-weight:400"> — 3 levels of practice</span>
+    </div>
+    <div style="background:white;border-radius:12px;padding:0.75rem 1.25rem;box-shadow:var(--shadow-soft);font-size:0.85rem;font-weight:700;color:var(--text-dark);border:1px solid rgba(201,184,240,0.3)">
+      📊 ISM <span style="color:var(--text-light);font-weight:400"> — Numericals & PYQs</span>
+    </div>
+    <div style="background:white;border-radius:12px;padding:0.75rem 1.25rem;box-shadow:var(--shadow-soft);font-size:0.85rem;font-weight:700;color:var(--text-dark);border:1px solid rgba(201,184,240,0.3)">
+      🤖 ML <span style="color:var(--text-light);font-weight:400"> — Theory + Code</span>
+    </div>
+    <div style="background:white;border-radius:12px;padding:0.75rem 1.25rem;box-shadow:var(--shadow-soft);font-size:0.85rem;font-weight:700;color:var(--text-dark);border:1px solid rgba(201,184,240,0.3)">
+      🧠 DNN <span style="color:var(--text-light);font-weight:400"> — Deep Learning</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS BAR ── -->
+<div class="stats-bar">
+  <div class="stat-item"><div class="num">4</div><div class="label">Subjects Covered</div></div>
+  <div class="stat-item"><div class="num">50+</div><div class="label">Practice Questions</div></div>
+  <div class="stat-item"><div class="num">3</div><div class="label">Difficulty Levels</div></div>
+  <div class="stat-item"><div class="num">100%</div><div class="label">Free Forever</div></div>
+  <div class="stat-item"><div class="num">∞</div><div class="label">Attempts Allowed</div></div>
+</div>
+
+<!-- ── SUBJECTS QUICK ACCESS ── -->
+<div class="section">
+  <div class="section-header">
+    <h2>4 Subjects · One Hub</h2>
+    <p>Everything you need for each EC3 subject, organized and accessible.</p>
+  </div>
+  <div class="subject-quick">
+    <a href="pages/notes.html#mfml" class="card purple" style="text-decoration:none">
+      <div class="card-icon">∑</div>
+      <div class="card-badge">Toughest</div>
+      <h3>MFML</h3>
+      <p>Mathematics for Machine Learning — Linear Algebra, Calculus, Optimization, Probability foundations.</p>
+      <span class="card-link">Explore Notes →</span>
+    </a>
+    <a href="pages/notes.html#ism" class="card green" style="text-decoration:none">
+      <div class="card-icon">📊</div>
+      <div class="card-badge">Most Scoring</div>
+      <h3>ISM</h3>
+      <p>Introduction to Statistical Methods — Probability, Distributions, Hypothesis Testing, Regression.</p>
+      <span class="card-link">Explore Notes →</span>
+    </a>
+    <a href="pages/notes.html#ml" class="card blue" style="text-decoration:none">
+      <div class="card-icon">🤖</div>
+      <div class="card-badge">Moderate</div>
+      <h3>ML</h3>
+      <p>Machine Learning — SVMs, Trees, Ensemble Methods, Clustering, Model Evaluation.</p>
+      <span class="card-link">Explore Notes →</span>
+    </a>
+    <a href="pages/notes.html#dnn" class="card orange" style="text-decoration:none">
+      <div class="card-icon">🧠</div>
+      <div class="card-badge">Hard</div>
+      <h3>DNN</h3>
+      <p>Deep Neural Networks — Backprop, CNNs, RNNs, LSTMs, Transformers, Optimization.</p>
+      <span class="card-link">Explore Notes →</span>
+    </a>
+  </div>
+</div>
+
+<!-- ── HOW TO USE ── -->
+<div class="bg-lavender">
+  <div class="section">
+    <div class="section-header">
+      <h2>Your 5-Step EC3 Success Plan</h2>
+      <p>A clear daily system that builds real exam confidence.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-icon">📋</div>
+        <h4>Step 1</h4>
+        <p>Review the syllabus — understand exactly what's in scope for EC3.</p>
+      </div>
+      <div class="step">
+        <div class="step-icon">📚</div>
+        <h4>Step 2</h4>
+        <p>Read unit-wise notes — concise summaries of each key concept.</p>
+      </div>
+      <div class="step">
+        <div class="step-icon">📝</div>
+        <h4>Step 3</h4>
+        <p>Solve previous year questions — understand the exam pattern deeply.</p>
+      </div>
+      <div class="step">
+        <div class="step-icon">🎯</div>
+        <h4>Step 4</h4>
+        <p>Take adaptive mock tests — get instant feedback and confidence messages.</p>
+      </div>
+      <div class="step">
+        <div class="step-icon">✅</div>
+        <h4>Step 5</h4>
+        <p>Quick Revision checklist — tick off topics as you master them.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── MOTIVATIONAL BANNER ── -->
+<div class="moti-banner">
+  <h2>"Every topic you study today<br>is one less surprise on exam day."</h2>
+  <p>The EC3 is challenging — but you have already shown the dedication to enroll in an M.Tech program while working full-time. That alone is remarkable. You've got this.</p>
+</div>
+
+<!-- ── TESTIMONIALS ── -->
+<div class="section">
+  <div class="section-header">
+    <h2>Words from the WILP Community</h2>
+    <p>Seniors who've been through EC3 share what helped them most.</p>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testi-card">
+      <p>"MFML looks terrifying but linear algebra is really just 3-4 core concepts repeated in different forms. Once it clicks, it actually gets fun."</p>
+      <div class="author">— 2024 Batch Senior, Software Engineer</div>
+    </div>
+    <div class="testi-card">
+      <p>"ISM was the subject I scored highest in — just solve every problem in Devore. I did 15 numericals daily for two weeks and walked in feeling confident."</p>
+      <div class="author">— 2023 Batch Senior, Data Scientist</div>
+    </div>
+    <div class="testi-card">
+      <p>"Run Géron's notebooks before reading ML theory. Seeing the code output first made everything click. Don't just read — do."</p>
+      <div class="author">— 2024 Batch Senior, ML Engineer</div>
+    </div>
+    <div class="testi-card">
+      <p>"Previous year papers are gold. Do all of them. The question patterns repeat more than you'd think. 2 weeks of PYQs and I passed comfortably."</p>
+      <div class="author">— 2023 Batch Senior, Consultant</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── QUICK LINKS ── -->
+<div class="bg-cream">
+  <div class="section">
+    <div class="section-header">
+      <h2>Everything You Need, Right Here</h2>
+    </div>
+    <div class="cards-grid">
+      <a href="pages/syllabus.html" class="card purple" style="text-decoration:none">
+        <div class="card-icon">📋</div>
+        <h3>Official Syllabus</h3>
+        <p>Unit-wise breakdown of all 4 subjects with weightage and topic list.</p>
+        <span class="card-link">View Syllabus →</span>
+      </a>
+      <a href="pages/pyq.html" class="card blue" style="text-decoration:none">
+        <div class="card-icon">📄</div>
+        <h3>Previous Year Questions</h3>
+        <p>Mid-sem and End-sem papers from 2023–2025 with pattern analysis.</p>
+        <span class="card-link">View PYQs →</span>
+      </a>
+      <a href="pages/tips.html" class="card green" style="text-decoration:none">
+        <div class="card-icon">💡</div>
+        <h3>Exam Strategy</h3>
+        <p>Time management, last-minute tips, and subject-specific exam tactics.</p>
+        <span class="card-link">Read Tips →</span>
+      </a>
+      <a href="pages/confidence.html" class="card orange" style="text-decoration:none">
+        <div class="card-icon">🌟</div>
+        <h3>Confidence Booster</h3>
+        <p>Feeling anxious? This page is designed to calm you and rebuild confidence.</p>
+        <span class="card-link">Get Motivated →</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h4>🎓 EC3 Prep Hub</h4>
+      <p>A free, community-built study platform for BITS Pilani WILP M.Tech AIML students. Created with care by a fellow student. No login, no ads, no fees — ever.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="pages/syllabus.html">Syllabus</a></li>
+        <li><a href="pages/notes.html">Unit Notes</a></li>
+        <li><a href="pages/pyq.html">PYQs</a></li>
+        <li><a href="pages/mocktest.html">Mock Tests</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="pages/tips.html">Exam Tips</a></li>
+        <li><a href="pages/revision.html">Quick Revision</a></li>
+        <li><a href="pages/confidence.html">Confidence Booster</a></li>
+        <li><a href="https://crackbitswilp.in" target="_blank" rel="noopener">CrackBITSWILP ↗</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Community</h4>
+      <ul>
+        <li><a href="https://mml-book.github.io" target="_blank" rel="noopener">MML Book (Free) ↗</a></li>
+        <li><a href="https://crackbitswilp.in/bits-wilp-previous-year-question-papers/" target="_blank" rel="noopener">PYQ Archive ↗</a></li>
+        <li><a href="https://kaggle.com/learn" target="_blank" rel="noopener">Kaggle Courses ↗</a></li>
+        <li><a href="https://www.youtube.com/@statquest" target="_blank" rel="noopener">StatQuest ↗</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p><strong>Disclaimer:</strong> This website is an independent, student-created resource and is NOT officially affiliated with BITS Pilani, BITS WILP, or any publisher. All academic content is original, created for educational purposes. Previous year questions referenced are from publicly shared community archives. Book titles and author names are cited for reference only. No copyrighted material is reproduced. Content accuracy is not guaranteed — always verify with official BITS sources. Use responsibly.</p>
+    <p style="margin-top:0.75rem">Built with 💜 for the BITS WILP AIML community · 2025–2026</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
